@@ -177,8 +177,8 @@
             try {
                 // Construct URL for API call
                 const url = date 
-                    ? `http://your-proxy-domain/stock/${ticker}?date=${date}`
-                    : `http://your-proxy-domain/stock/${ticker}`;
+                    ? `/stock/${ticker}?date=${date}`
+                    : `/stock/${ticker}`;
 
                 const response = await fetch(url);
 
