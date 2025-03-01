@@ -5,9 +5,9 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: your-aws-region  # e.g. us-east-1
-  ECR_REPOSITORY: your-ecr-repo-name  # e.g. stock-price-app
-  CONTAINER_NAME: your-container-name  # e.g. techbleat-stock-app
+  AWS_REGION: ${{ vars.AWS_REGION }}          # Now using variable
+  ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY }}  # Now using variable
+  CONTAINER_NAME: ${{ vars.CONTAINER_NAME }}  # Now using variable
 
 jobs:
   build-and-push:
