@@ -2,10 +2,10 @@ name: Continuous Integration (Docker Build)
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
-  build-docker:
+  ci:
     runs-on: ubuntu-latest
     permissions:
       contents: read

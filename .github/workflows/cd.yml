@@ -10,7 +10,7 @@ env:
   CONTAINER_NAME: ${{ vars.CONTAINER_NAME }} # Now using variable
 
 jobs:
-  build-and-push:
+  cd:
     runs-on: ubuntu-latest
     permissions:
       contents: read
